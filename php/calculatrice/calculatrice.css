@@ -1,0 +1,11 @@
+form{
+    text-align: center;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+input{
+    max-width: 40%;
+    max-height: 70%;
+    margin: 1%;
+}
