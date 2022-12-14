@@ -1,0 +1,53 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+nav{
+    background-image: url(../img/header-bg.jpg);
+    display: grid;
+    grid-template-columns:75% 5% 5% 5% 5%;
+    gap: 1%;
+}
+li{
+    list-style: none;
+}
+nav a{
+    margin-top: 20%;
+    color: white;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+p a{
+    border: solid;
+    border-radius: 0%;
+    border-color: rgb(11, 175, 216);
+    padding: 0.5%;
+}
+h1{
+    text-align: center;
+}
+hr{
+    margin-right: 48%;
+    margin-left: 48% ;
+    background-color: rgb(11, 175, 216);
+    padding: 0.07%;
+}
+p{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+footer {
+    background-color: rgb(11, 175, 216);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer p{
+    color: white;
+}
