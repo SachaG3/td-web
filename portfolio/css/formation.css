@@ -1,0 +1,17 @@
+#formation{
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5,50%);
+}
+#formation div{
+     margin-top: 5%;
+}
+#formation li{
+    margin-top: 5%;
+    text-align: center;
+    list-style-type: none;
+}
+#formation p{
+    color: wheat;
+}

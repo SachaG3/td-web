@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/A_propos.css">
     <link rel="stylesheet" href="css/Accueil.css">
     <link rel="stylesheet" href="css/competence.css">
+    <link rel="stylesheet" href="css/formation.css">
     <link rel="stylesheet" href="css/experience.css">
-    <link href="minecraft.ttf">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="minecraft.ttf">
     <title>Portfolio</title>
 </head>
 <body>
@@ -38,7 +40,7 @@
         </div>
     </nav>
     <div>
-        <button id="menuBtn"><p>Mes réseaux</p></button>
+        <button id="menuBtn">Mes réseaux</button>
         <ul id="menu">      
             <li><a href="https://www.linkedin.com/in/sacha-guignard-a5b741232"> <img src="img/link.png" alt=""></a></li>
             <li><a href="https://github.com/SachaG3"> <img src="img/git.png" alt=""></a></li>
@@ -86,7 +88,7 @@
     </section>
 
     <section id="formation" class="pasAfficher">
-
+        <?php include("php/formation.php")?>
     </section>
 
     <section id="experience" class="pasAfficher">
@@ -96,14 +98,14 @@
     <section id="contact" class="pasAfficher">
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <form action="php/contact.php" method="post">
-            <label for="nom">Nom et prénom:</label><br>
-            <input type="text" id="nom" name="nom"><br>
-            <label for="email">Adresse email :</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="sujet">Sujet :</label><br>
-            <input type="text" id="sujet" name="sujet"><br><br>
-            <label for="message">Message :</label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+            <p><label for="nom">Nom et prénom:</label></p>
+            <input type="text" id="nom" name="nom">
+            <p><label for="email">Adresse email :</label></p>
+            <input type="email" id="email" name="email">
+            <p><label for="sujet">Sujet :</label></p>
+            <input type="text" id="sujet" name="sujet">
+            <p><label for="message">Message :</label></p>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
             <div class="g-recaptcha" data-sitekey="6LfVkJgjAAAAAMr9PmMvA8YMEOZxhQavI0Dba6_A"></div>
             <input type="submit" value="Envoyer">
         </form>

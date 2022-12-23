@@ -1,0 +1,30 @@
+college:
+  année: 2014-2018
+  établisement: Jeanne d'arc Bayeux
+  ville: Bayeux
+  diplome: brevet 
+  status: obtenu
+
+lycee:
+  année: 2018-2021
+  établisement: Arcisse de caumont
+  ville: Bayeux
+  diplome: bac
+  status: obtenu
+
+license:
+  année: 2021-2022
+  établisement: Université Caen Normandie
+  ville: Caen
+  diplome: license
+  status: abandonée
+
+bts:
+  anée: 2022-2024
+  établisement: CaenSUP Saint-Ursule
+  ville: Caen
+  diplome: bts
+  status: en cours
+
+
+
