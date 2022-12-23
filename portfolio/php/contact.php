@@ -22,14 +22,12 @@ $response = json_decode($response, true);
 if ($response['success'] == true) {
   // Captcha correctement résolu, envoyez l'e-mail avec PHPmailer
 } else {
-  // Capt
-
-
-
+    
+}
 // Valider les données du formulaire (si nécessaire)
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   // Adresse e-mail non valide, afficher une erreur
-  echo 'Adresse e-mail non valide';
+  echo '<script>Adresse e-mail non valide</script>';
   exit;
 }
 $contenu = file_get_contents('../yaml/juipnb.txt');
@@ -54,7 +52,7 @@ $mail->Body = $message;
 
 // Envoyer le message
 if(!$mail->send()) {
-    echo 'Erreur lors de l\'envoi du message: ' . $mail->ErrorInfo;
+    echo '<script> alert(Erreur lors de l\'envoi du message:);</script>' . $mail->ErrorInfo;
 } else {
-    echo 'Message envoyé avec succès!';
+    echo '<script>alert(Message envoyé avec succès!);</script>';
 }
