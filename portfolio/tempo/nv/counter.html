@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compteur</title>
+</head>
+<body>
+<textarea id="text" placeholder="Saisir du texte"></textarea>
+<button>Compter</button>
+<div id="result">--</div>
+</body>
+<script>
+    document.querySelector("#text").addEventListener('keyup',function (){ //querySelector permet de cecupérer l'element html button
+      let mot = document.getElementById('text').value;
+      console.log(mot.length);
+      document.getElementById('result').innerHTML = mot.length;
+    })
+</script>
+</html>

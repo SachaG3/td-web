@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "minecraft";
+    src: url("../Minecraft.ttf");
+}
+.pasAfficher{
+    display: none !important;
+}
+
+body{
+    background-color: rgb(31,31,31);
+    font-family: minecraft;
+    margin: 1%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+nav{
+    position:fixed;
+    width: 98%;
+    
+    
+}
+nav div{
+    display: grid;
+    grid-template-columns:25% repeat(6,1fr);
+    gap: 1%;
+}
+#Portfolio{
+    
+    margin: 1fr;
+    font-size: 100%;
+    text-align: center;
+    color: wheat;
+}
+.nav{
+    font-size: 100%;
+    text-align: center;
+    margin: 1fr;
+    text-decoration: none;
+    border-style:dotted ;
+    border-color: rgb(116, 87, 35);
+    color: wheat;
+}
+#menuBtn{
+    background-color:  transparent;
+    color: wheat;
+    border-style:dotted ;
+    border-color: rgb(116, 87, 35);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-30%);
+}
+  
+#menu.visible {
+    position:fixed;
+    display: block; 
+    top: 35%;
+    left: 0;
+    transform: translateY(-35%);
+}
+#menu{
+    display: none ;
+    list-style-type: none;
+    
+}
+ul li a{
+    text-decoration: none;
+}
+#menu img {
+    height: 18px;
+    width: 18px;
+}

@@ -1,0 +1,15 @@
+#apropos{
+    display: grid;
+    grid-template-columns: repeat(8,10%);
+    grid-template-rows: repeat(5, 1fr);
+}
+#apropos h1{
+    grid-area: 3 / 5 / 3 / 7;
+    text-align: center;
+    color:rgb(94,67,44)
+}
+#apropos p{
+    text-align: center;
+    grid-area: 5 / 3 / 7 / 9 ;
+    color:wheat;
+}

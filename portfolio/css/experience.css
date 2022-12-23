@@ -1,0 +1,23 @@
+#experience{
+    overflow: auto;
+    padding-right: 15px;
+}
+#experience div{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(5,5%);
+    width: 100%;
+    
+}
+#experience ul{
+    grid-column: 2;
+    grid-row-start: 3;
+}
+#experience li{
+    margin-top: 5%;
+    text-align: center;
+    list-style-type: none;
+}
+#experience p{
+    color: wheat;
+}
