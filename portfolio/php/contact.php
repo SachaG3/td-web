@@ -9,6 +9,23 @@ $email = $_POST['email'];
 $subject = $_POST['sujet'];
 $message = $_POST['message'];
 
+
+
+$secret = '6Ld46aEjAAAAAI3d3qdp-r9rbhbi_DzHg5z94xZy';
+$response = $_POST['g-recaptcha-response'];
+$remoteip = $_SERVER['REMOTE_ADDR'];
+
+$url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secret) .  '&response=' . urlencode($response) . '&remoteip=' . urlencode($remoteip);
+$response = file_get_contents($url);
+$response = json_decode($response, true);
+
+if ($response['success'] == true) {
+  // Captcha correctement résolu, envoyez l'e-mail avec PHPmailer
+} else {
+  // Capt
+
+
+
 // Valider les données du formulaire (si nécessaire)
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   // Adresse e-mail non valide, afficher une erreur

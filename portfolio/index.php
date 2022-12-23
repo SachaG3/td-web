@@ -96,8 +96,10 @@
     </section>
 
     <section id="contact" class="pasAfficher">
+        
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <form action="php/contact.php" method="post">
+            <h1>Contact</h1>
             <p><label for="nom">Nom et prénom:</label></p>
             <input type="text" id="nom" name="nom">
             <p><label for="email">Adresse email :</label></p>
@@ -106,7 +108,7 @@
             <input type="text" id="sujet" name="sujet">
             <p><label for="message">Message :</label></p>
             <textarea id="message" name="message" rows="5" cols="30"></textarea>
-            <div class="g-recaptcha" data-sitekey="6LfVkJgjAAAAAMr9PmMvA8YMEOZxhQavI0Dba6_A"></div>
+            <div class="g-recaptcha" data-sitekey="6Ld46aEjAAAAAPbN9uBh3W1zdBY-5fw0X3AO7llg"></div>
             <input type="submit" value="Envoyer">
         </form>
 
