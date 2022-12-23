@@ -15,7 +15,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   echo 'Adresse e-mail non valide';
   exit;
 }
-$contenu = file_get_contents('juipnb.txt');
+$contenu = file_get_contents('../yaml/juipnb.txt');
 // Créer un nouvel objet PHPMailer
 $mail = new PHPMailer;
 
