@@ -43,6 +43,7 @@ nav div{
     color: wheat;
 }
 #menuBtn{
+    margin-left: 1.5%;
     background-color:  transparent;
     color: wheat;
     border-style:dotted ;
@@ -52,11 +53,10 @@ nav div{
     left: 0;
     transform: translateY(-30%);
 }
-  
 #menu.visible {
     position:fixed;
     display: block; 
-    top: 35%;
+    top: 40%;
     left: 0;
     transform: translateY(-35%);
 }
@@ -69,6 +69,6 @@ ul li a{
     text-decoration: none;
 }
 #menu img {
-    height: 18px;
-    width: 18px;
+    height: 36px;
+    width: 36px;
 }

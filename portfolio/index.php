@@ -38,7 +38,7 @@
         </div>
     </nav>
     <div>
-        <button id="menuBtn">Mes réseaux</button>
+        <button id="menuBtn"><p>Mes réseaux</p></button>
         <ul id="menu">      
             <li><a href="https://www.linkedin.com/in/sacha-guignard-a5b741232"> <img src="img/link.png" alt=""></a></li>
             <li><a href="https://github.com/SachaG3"> <img src="img/git.png" alt=""></a></li>
@@ -94,6 +94,21 @@
     </section>
 
     <section id="contact" class="pasAfficher">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <form action="php/contact.php" method="post">
+            <label for="nom">Nom et prénom:</label><br>
+            <input type="text" id="nom" name="nom"><br>
+            <label for="email">Adresse email :</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="sujet">Sujet :</label><br>
+            <input type="text" id="sujet" name="sujet"><br><br>
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+            <div class="g-recaptcha" data-sitekey="6LfVkJgjAAAAAMr9PmMvA8YMEOZxhQavI0Dba6_A"></div>
+            <input type="submit" value="Envoyer">
+        </form>
+
+
 
     </section>
     
