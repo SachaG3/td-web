@@ -49,7 +49,7 @@ $mail->Body = $message;
 if(!$mail->send()) {
     echo 'Erreur' . $mail->ErrorInfo;
 } elseif ($response['success'] == false){
-    echo 'Erreur captcha' . $mail->ErrorInfo;
+    echo 'Erreur captcha';
 }
 else {
     echo 'Message envoyé avec succès!';
