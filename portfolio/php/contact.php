@@ -1,4 +1,4 @@
-<?php
+script<?php
 // Inclure PHP Mailer
 include_once '../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -22,7 +22,7 @@ $response = json_decode($response, true);
 if ($response['success'] == true) {
   // Captcha correctement résolu, envoyez l'e-mail avec PHPmailer
 } else {
-    
+    // Capt
 }
 // Valider les données du formulaire (si nécessaire)
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -52,7 +52,7 @@ $mail->Body = $message;
 
 // Envoyer le message
 if(!$mail->send()) {
-    echo '<script> alert(Erreur lors de l\'envoi du message:);</script>' . $mail->ErrorInfo;
+    echo 'alert(Erreur lors de l\'envoi du message:);</script>' . $mail->ErrorInfo;
 } else {
-    echo '<script>alert(Message envoyé avec succès!);</script>';
+    echo '<script>alert(Message envoyé avec succès!);</scrip>';
 }
