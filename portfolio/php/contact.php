@@ -1,6 +1,6 @@
 <?php
 // Inclure PHP Mailer
-include_once '../vendor/autoload.php';
+include_once '../../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 
 
@@ -49,7 +49,7 @@ $mail->Body = $message;
 if(!$mail->send()) {
     echo 'Erreur' . $mail->ErrorInfo;
 } elseif ($response['success'] == false){
-    echo 'Erreur captcha';
+    echo 'Erreur captcha' . $mail->ErrorInfos;
 }
 else {
     echo 'Message envoyé avec succès!';
