@@ -65,7 +65,7 @@
         <img alt="Sacha_Guignard" src="img/images.jpg" >
         <div id="popup1" class="overlay">
             <div class="popup">
-                <h2>Salut je suis un developpeur en devenir !!!</h2>
+                <h2>Salut ! Je suis un développeur en devenir !!</h2>
                 <a class="close" href="#">&times;</a>
             </div>
         </div>
@@ -74,8 +74,8 @@
         <h1>A propos de moi</h1>
         <p>Bonjour, je suis un jeune développeur qui ne cherche que l'amélioration.
             Je m'appelle <?php echo nomprenom();?> j'ai <?php echo aniversaire()?> ans.
-            J'ai commancé à coder trés tot sur plusieur language de programation. Je pense que mon
-            languagede coeur est python.
+            J'ai commancé à coder très tôt sur plusieurs languages de programation. Je pense que mon
+            language de coeur est python.
         </p>
     </section>
 

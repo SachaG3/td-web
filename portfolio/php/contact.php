@@ -1,4 +1,4 @@
-script<?php
+<?php
 // Inclure PHP Mailer
 include_once '../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -19,15 +19,10 @@ $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($se
 $response = file_get_contents($url);
 $response = json_decode($response, true);
 
-if ($response['success'] == true) {
-  // Captcha correctement résolu, envoyez l'e-mail avec PHPmailer
-} else {
-    // Capt
-}
 // Valider les données du formulaire (si nécessaire)
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   // Adresse e-mail non valide, afficher une erreur
-  echo '<script>Adresse e-mail non valide</script>';
+  echo 'Adresse e-mail non valide';
   exit;
 }
 $contenu = file_get_contents('../yaml/juipnb.txt');
@@ -52,7 +47,10 @@ $mail->Body = $message;
 
 // Envoyer le message
 if(!$mail->send()) {
-    echo 'alert(Erreur lors de l\'envoi du message:);</script>' . $mail->ErrorInfo;
-} else {
-    echo '<script>alert(Message envoyé avec succès!);</scrip>';
+    echo 'Erreur' . $mail->ErrorInfo;
+} elseif ($response['success'] == false){
+    echo 'Erreur captcha' . $mail->ErrorInfo;
+}
+else {
+    echo 'Message envoyé avec succès!';
 }
